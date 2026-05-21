@@ -1,7 +1,4 @@
 
-
-using System.Reflection.Metadata.Ecma335;
-
 public class Journal
 {
     public List<Entry> _entries = new List<Entry>();
@@ -27,7 +24,6 @@ public class Journal
             foreach(Entry entry in _entries)
             {
                 outputFile.WriteLine($"{entry._date} | {entry._promptText}| {entry._entryText}");
-
             }
         }
 
@@ -38,8 +34,6 @@ public class Journal
 
         Console.WriteLine("Loading from file....");
         string[] lines = System.IO.File.ReadAllLines(file);
-
-       
 
         foreach (string line in lines)
         {
@@ -52,7 +46,4 @@ public class Journal
 
         }
     }
-
-
-
 }
