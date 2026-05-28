@@ -1,5 +1,4 @@
 //To show creativity, the program ask the user for number of words to hide and continue until the whole scripture is hidden.
-
 using System;
 
 class Program
@@ -31,7 +30,7 @@ class Program
             //Stop if ecverything is hidden
             if (scripture.IsCompletelyHidden())
             {
-                Console.WriteLine("\nAll words are hidden. If you don't memorize the scripture reload the program.");
+                Console.WriteLine("\nAll words are hidden. If you don't memorize the scripture reload the program until you are confident.");
                 break;
             }
 
