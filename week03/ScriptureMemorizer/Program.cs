@@ -31,7 +31,7 @@ class Program
             //Stop if ecverything is hidden
             if (scripture.IsCompletelyHidden())
             {
-                Console.WriteLine("\nAll words are hidden.");
+                Console.WriteLine("\nAll words are hidden. If you don't memorize the scripture reload the program.");
                 break;
             }
 
