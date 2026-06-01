@@ -138,9 +138,8 @@ class Program
             Console.WriteLine("Comments:");
             foreach (Comment comment in video._comments)
             {
-                string name = comment._personName;
-                string text = comment._text;
-                Console.WriteLine($"{name}: {text}");
+                comment.Display();
+                
             }
             Console.WriteLine("\n");
         }
