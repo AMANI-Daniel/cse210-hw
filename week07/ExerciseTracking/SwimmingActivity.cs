@@ -23,15 +23,4 @@ public class SwimmingActivity : Activity
         double speed = GetSpeed();
         return 60 / speed;
     }
-    public override string GetSummary()
-    {
-        string date = base.GetDate();
-        double minutes = base.GetLength();
-        double distance = Math.Round(GetDistance(), 2);
-        double speed = Math.Round(GetSpeed(), 2);
-        double pace = Math.Round(GetPace(), 2);
-
-        string summary = $"{date} Swimming({minutes} min) : Laps: {_laps} laps; Distance: {distance} km, Speed: {speed} kph, Pace: {pace} min per km";
-        return summary;
-    }
 }

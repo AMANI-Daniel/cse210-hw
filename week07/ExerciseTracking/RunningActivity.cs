@@ -23,16 +23,4 @@ public class RunningActivity : Activity
         return pace;
     }
 
-    public override string GetSummary()
-    {
-        string date = base.GetDate();
-        double minutes = base.GetLength();
-        double distance = GetDistance();
-        double speed = Math.Round(GetSpeed(), 2);
-        double pace = Math.Round(GetPace(), 2);
-
-        string summary = $"{date} Running({minutes} min) : Distance {distance} km, Speed: {speed} kph, Pace: {pace} min per km";
-        return summary;
-    }
-
 }

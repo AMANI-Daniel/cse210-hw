@@ -21,5 +21,13 @@ public abstract class Activity
     public abstract double GetSpeed();
     public abstract double GetPace();
 
-    public abstract string GetSummary();
+    public string GetSummary()
+    {
+        double distance = Math.Round(GetDistance(), 2);
+        double speed = Math.Round(GetSpeed(), 2);
+        double pace = Math.Round(GetPace(), 2);
+
+        string summary = $"{_date} Running({_length} min) : Distance {distance} km, Speed: {speed} kph, Pace: {pace} min per km";
+        return summary;
+    }
 }

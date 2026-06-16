@@ -21,16 +21,5 @@ public class CyclingActivity : Activity
     {
         return 60 / _speed;
     }
-    public override string GetSummary()
-    {
-        string date = base.GetDate();
-        double minutes = base.GetLength();
-        double distance = Math.Round(GetDistance(), 2);
-        double speed = GetSpeed();
-        double pace = Math.Round(GetPace(), 2);
-
-        string summary = $"{date} Cycling({minutes} min) : Distance {distance} km, Speed: {speed} kph, Pace: {pace} min per km";
-        return summary;
-    }
 
 }
