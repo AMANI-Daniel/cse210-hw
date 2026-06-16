@@ -1,0 +1,6 @@
+510
+SimpleGoal: running, running 100 miles today, 50, True
+EternalGoal: study scriiptures, studying the scriptures for 10 minutes aday, 20
+CheckListGoal: attend the temple, attend the temple and perform any ordinance, 110,100, 3, 3
+CheckListGoal: wake up, wake up 5am in this week, 80,50, 7, 7
+SimpleGoal: Visiting my friend, Visiting my friend Eric in weekend, 30, True
